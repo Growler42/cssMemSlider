@@ -1,0 +1,29 @@
+{
+  "name": "cssmemslider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "linthtml **/*.html",
+    "stylelint": "stylelint **/*.css",
+    "stylelint:fix": "stylelint **/*.css --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Growler42/cssMemSlider.git"
+  },
+  "author": "Growler42",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Growler42/cssMemSlider/issues"
+  },
+  "homepage": "https://github.com/Growler42/cssMemSlider#readme",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.8.0",
+    "linthtml-config-htmlacademy": "^1.0.3",
+    "stylelint": "^13.13.1",
+    "stylelint-config-htmlacademy": "^0.1.10",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-order": "^4.1.0"
+  }
+}
