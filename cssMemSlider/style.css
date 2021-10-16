@@ -63,6 +63,17 @@ img {
   object-fit: fill;
 }
 
+.meme-header {
+  grid-area: txt;
+  color: #F0F47D;
+}
+
+h1 > span {
+  display: none;
+  margin-left: -100%;
+  transition: all 0.5s ease-in-out;
+}
+
 .img-slider > .navigation {
   font-size: 0;
   grid-area: dots;
@@ -82,7 +93,6 @@ img {
 }
 
 .img-slider > .navigation label::after {
-
   width: 100%;
   height: 100%;
   padding: 10px;
@@ -97,51 +107,60 @@ img {
 .img-slider > input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3)::after,
 .img-slider > input:nth-of-type(4):checked ~ .navigation label:nth-of-type(4)::after,
 .img-slider > input:nth-of-type(5):checked ~ .navigation label:nth-of-type(5)::after,
-.img-slider > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6)::after,
-.img-slider > input:nth-of-type(7):checked ~ .navigation label:nth-of-type(7)::after,
-.img-slider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8)::after,
-.img-slider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9)::after,
-.img-slider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10)::after,
-.img-slider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11)::after {
+.img-slider > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6)::after {
   opacity: 1;
-}
-
-.img-slider > input:nth-of-type(10):checked ~ ul li:first-of-type {
-  margin-left: -900%;
-}
-
-.img-slider > input:nth-of-type(9):checked ~ ul li:first-of-type {
-  margin-left: -800%;
-}
-
-.img-slider > input:nth-of-type(8):checked ~ ul li:first-of-type {
-  margin-left: -700%;
-}
-
-.img-slider > input:nth-of-type(7):checked ~ ul li:first-of-type {
-  margin-left: -600%;
 }
 
 .img-slider > input:nth-of-type(6):checked ~ ul li:first-of-type {
   margin-left: -500%;
 }
 
+.img-slider > input:nth-of-type(6):checked ~ h1 span:nth-of-type(6) {
+  display: block;
+  margin-left: 0;
+}
+
 .img-slider > input:nth-of-type(5):checked ~ ul li:first-of-type {
   margin-left: -400%;
+}
+
+.img-slider > input:nth-of-type(5):checked ~ h1 span:nth-of-type(5) {
+  display: block;
+  margin-left: 0;
 }
 
 .img-slider > input:nth-of-type(4):checked ~ ul li:first-of-type {
   margin-left: -300%;
 }
 
+.img-slider > input:nth-of-type(4):checked ~ h1 span:nth-of-type(4) {
+  display: block;
+  margin-left: 0;
+}
+
 .img-slider > input:nth-of-type(3):checked ~ ul li:first-of-type {
   margin-left: -200%;
+}
+
+.img-slider > input:nth-of-type(3):checked ~ h1 span:nth-of-type(3) {
+  display: block;
+  margin-left: 0;
 }
 
 .img-slider > input:nth-of-type(2):checked ~ ul li:first-of-type {
   margin-left: -100%;
 }
 
+.img-slider > input:nth-of-type(2):checked ~ h1 span:nth-of-type(2) {
+  display: block;
+  margin-left: 0;
+}
+
 .img-slider > input:nth-of-type(1):checked ~ ul li:first-of-type {
+  margin-left: 0;
+}
+
+.img-slider > input:nth-of-type(1):checked ~ h1 span:nth-of-type(1) {
+  display: block;
   margin-left: 0;
 }
