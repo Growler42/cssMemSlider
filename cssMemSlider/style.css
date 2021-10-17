@@ -40,9 +40,15 @@ main {
 @media (max-width: 500px) {
   main {
     width: 90%;
-    height: 50%;
+    /*height: 50%;*/
   }
 }
+
+/*@media (max-height: 1000px) {*/
+/*  main {*/
+/*    height: 90%;*/
+/*  }*/
+/*}*/
 
 .img-slider {
   display: grid;
@@ -53,6 +59,7 @@ main {
     "ul ul"
     "txt dots";
   grid-template-columns: 1fr auto;
+  grid-template-rows: 80% 20%;
 }
 
 @media (max-width: 1000px) {
@@ -62,11 +69,18 @@ main {
       "ul"
       "dots"
       "txt";
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: 3fr auto 1fr;
   }
 }
 
 @media (max-width: 500px) {
+  .img-slider {
+    row-gap: 1rem;
+  }
+}
+
+
+@media (max-height: 1000px) {
   .img-slider {
     row-gap: 1rem;
   }
@@ -254,6 +268,17 @@ h1 > span {
   .img-slider > input:nth-of-type(2):checked ~ h1 span:nth-of-type(2),
   .img-slider > input:nth-of-type(1):checked ~ h1 span:nth-of-type(1) {
     font-size: 6vw;
+  }
+}
+
+@media (max-height: 600px) {
+  .img-slider > input:nth-of-type(6):checked ~ h1 span:nth-of-type(6),
+  .img-slider > input:nth-of-type(5):checked ~ h1 span:nth-of-type(5),
+  .img-slider > input:nth-of-type(4):checked ~ h1 span:nth-of-type(4),
+  .img-slider > input:nth-of-type(3):checked ~ h1 span:nth-of-type(3),
+  .img-slider > input:nth-of-type(2):checked ~ h1 span:nth-of-type(2),
+  .img-slider > input:nth-of-type(1):checked ~ h1 span:nth-of-type(1) {
+    font-size: 4.5vh;
   }
 }
 
